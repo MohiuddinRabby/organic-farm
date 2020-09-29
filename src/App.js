@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
       
-    </div>
+    </React.Fragment>
   );
 };
 
