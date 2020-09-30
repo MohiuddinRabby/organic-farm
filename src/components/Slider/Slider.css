@@ -1,0 +1,4 @@
+.carousel-item img{
+    background-size: cover;
+    min-height: 500px;
+}
