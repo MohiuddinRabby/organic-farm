@@ -1,9 +1,7 @@
 import React from "react";
-import slider1 from "../../assets/img/Slider1.jpg";
-import slider2 from "../../assets/img/slider2.jpg";
-import slider3 from "../../assets/img/slider3.jpg";
 import "./Slider.css";
 const Slider = () => {
+
   return (
     <div
       id="carouselExampleCaptions"
@@ -11,27 +9,67 @@ const Slider = () => {
       data-ride="carousel"
     >
       <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img src={slider1} alt="..." />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <div className="carousel-item carousel-image-1 active">
+          <div className="dark-overlary">
+            <div className="container">
+              <div className="carousel-caption d-none d-sm-block">
+                <div className="title-box">
+                  <h5
+                    className="title-one"
+                  >
+                    High-Quality Organic Products
+                  </h5>
+                  <h5
+                    className="title-two"
+                  >
+                    VEGETABLES
+                  </h5>
+                  <h5
+                    className="title-three"
+                  >
+                    WITHOUT HARMFUL ADDITIVES
+                  </h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="carousel-item">
-          <img src={slider2} alt="..." />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div className="carousel-item carousel-image-2">
+          <div className="dark-overlary">
+            <div className="container">
+              <div className="carousel-caption d-none d-sm-block">
+                <div className="title-box">
+                  <h5
+                    className="title-one"
+                  >
+                    Fresh Organic Produce
+                  </h5>
+                  <h5
+                    className="title-two"
+                  >
+                    FRUITS
+                  </h5>
+                  <h5
+                    className="title-three"
+                  >
+                    WITH LOTS OF VITAMINS
+                  </h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="carousel-item">
-          <img src={slider3} alt="..." />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+        <div className="carousel-item carousel-image-3">
+          <div className="dark-overlary">
+            <div className="container">
+              <div className="carousel-caption d-none d-sm-block">
+                <div className="title-box">
+                  <h5 className="title-one">Welcome to Our Farm</h5>
+                  <h5 className="title-two">PRODUCTS</h5>
+                  <h5 className="title-three">GROWN WITH LOVE</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -41,8 +79,9 @@ const Slider = () => {
         role="button"
         data-slide="prev"
       >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="sr-only">Previous</span>
+        <span aria-hidden="true" id="prev-text">
+          prev
+        </span>
       </a>
       <a
         className="carousel-control-next"
@@ -50,8 +89,9 @@ const Slider = () => {
         role="button"
         data-slide="next"
       >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="sr-only">Next</span>
+        <span aria-hidden="true" id="next-text">
+          next
+        </span>
       </a>
     </div>
   );

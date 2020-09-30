@@ -22,7 +22,7 @@ const Header = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav m-auto">
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link to="/" className="nav-link">
                 Home
@@ -50,11 +50,11 @@ const Header = () => {
                 <i className="fas fa-shopping-basket fa-2x"></i>
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link to="/" className="nav-link" href="#">
                 <i className="fas fa-align-left fa-2x"></i>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
