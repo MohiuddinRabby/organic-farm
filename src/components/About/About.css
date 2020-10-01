@@ -1,0 +1,38 @@
+.about-section {
+}
+.about-titles {
+  margin: 50px 0px 20px 60px;
+}
+#about-title-one {
+  letter-spacing: 4px;
+  font-family: "kalam", cursive;
+  text-transform: none;
+  color: #76aa6f;
+}
+#about-title-two {
+  margin-top: 18px;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+#about-title-three {
+  color: #6c757d;
+  letter-spacing: 2px;
+}
+.founder-msg {
+  align-items: center;
+  justify-content: center;
+}
+#founder-name{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #151515;
+}
+#team-status{
+    letter-spacing: .025em;
+    font-style: italic;
+    color: #76aa6f;
+    font-weight: 400;
+}

@@ -18,7 +18,9 @@ const Header = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon">
+            <i className="fas fa-arrow-circle-down"></i>
+          </span>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,11 +52,6 @@ const Header = () => {
                 <i className="fas fa-shopping-basket fa-2x"></i>
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <Link to="/" className="nav-link" href="#">
-                <i className="fas fa-align-left fa-2x"></i>
-              </Link>
-            </li> */}
           </ul>
         </div>
       </div>
