@@ -1,9 +1,17 @@
-.navbar {
+/* .navbar {
   padding: 15px;
+}   */
+
+.navbar {
+  box-shadow: 0px 1px 0px  #3292a6;
+  opacity: 0.9;
+  background: #fff;
 }
+
 .navbar-nav li {
   margin-left: 42px;
 }
+
 .navbar-expand-lg .navbar-nav a {
   position: relative;
   display: inline-block;
@@ -14,6 +22,7 @@
   color: #151515;
   text-transform: uppercase;
 }
+
 .navbar-expand-lg .navbar-nav a:hover {
   color: #76aa6f;
 }

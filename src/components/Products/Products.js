@@ -1,6 +1,6 @@
 import React from "react";
 import "./Products.css";
-import { Card } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 
 const Products = (props) => {
   const { name, img, price } = props.product;
@@ -11,6 +11,10 @@ const Products = (props) => {
         <Card.Body>
           <Card.Title id="pd-name">{name}</Card.Title>
           <Card.Title id="price">${price}</Card.Title>
+          <br />
+          <Button variant="outline-success">
+            <i className="fab fa-opencart fa-2x"></i>
+          </Button>
         </Card.Body>
       </Card>
     </div>
