@@ -1,0 +1,28 @@
+.product-card .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+#pd-name {
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#pd-name:hover {
+  color: #76aa6f;
+}
+#price {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #76aa6f;
+}

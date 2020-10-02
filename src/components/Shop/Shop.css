@@ -1,0 +1,26 @@
+#latest-title {
+  letter-spacing: 4px;
+  font-family: "kalam", cursive;
+  text-transform: none;
+  color: #76aa6f;
+}
+#products-title {
+  margin-top: 18px;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.cat-nav .nav-item {
+  cursor: pointer;
+  margin: 18px;
+}
+.cat-nav .nav-item span {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.cat-nav .nav-item span:hover {
+  color: #76aa6f;
+}
+.actives {
+  color: #76aa6f;
+}
