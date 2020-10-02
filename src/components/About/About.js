@@ -5,7 +5,7 @@ import "./About.css";
 import { Fade, Rotate } from "react-reveal";
 const About = () => {
   return (
-    <Container fluid="md" className="about-section py-5">
+    <Container fluid="md" className="about-section py-5" id="about">
       <Row className="py-5">
         <Col md={6}>
           <Fade left>
