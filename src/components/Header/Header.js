@@ -2,7 +2,11 @@ import React from "react";
 import "./Header.css";
 import icon from "../../assets/img/vegetables.svg";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { StorageContext } from "../../global/StorageContext";
 const Header = () => {
+  const [loc_storage, setLocStorage] = useContext(StorageContext);
+  // console.log(loc_storage)
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
@@ -50,7 +54,7 @@ const Header = () => {
             <li className="nav-item">
               <Link to="/shop/cart" className="nav-link">
                 <i className="fas fa-shopping-basket fa-2x"></i>
-                <span>0</span>
+                <span>{loc_storage.length}</span>
               </Link>
             </li>
           </ul>

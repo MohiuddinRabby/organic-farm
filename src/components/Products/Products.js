@@ -12,7 +12,7 @@ const Products = (props) => {
           <Card.Title id="pd-name">{name}</Card.Title>
           <Card.Title id="price">${price}</Card.Title>
           <br />
-          <Button variant="outline-success">
+          <Button variant="outline-success" onClick={()=>props.handleCart(props.product)}>
             <i className="fab fa-opencart fa-2x"></i>
           </Button>
         </Card.Body>
