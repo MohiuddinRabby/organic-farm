@@ -6,3 +6,26 @@
   font-weight: bold;
   letter-spacing: 2px;
 }
+Table tbody tr td {
+  font-size: 16px;
+}
+Table tbody tr td input{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  width: 30px;
+  font-weight: bold;
+}
+#cart-minus {
+  padding-right: 10px;
+  margin: 5px;
+  cursor: pointer;
+  color: brown;
+}
+#cart-plus {
+  padding-left: 10px;
+  margin: 5px;
+  cursor: pointer;
+  color: green;
+}
