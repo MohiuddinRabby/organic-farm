@@ -2,7 +2,10 @@ import React from "react";
 import "./Header.css";
 import icon from "../../assets/img/vegetables.svg";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../global/CartContext";
 const Header = () => {
+  const [cart, setCart] = useContext(CartContext);
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
@@ -50,7 +53,7 @@ const Header = () => {
             <li className="nav-item">
               <Link to="/shop/cart" className="nav-link">
                 <i className="fas fa-shopping-basket fa-2x"></i>
-                <span>0</span>
+                <span>{cart.length}</span>
               </Link>
             </li>
           </ul>

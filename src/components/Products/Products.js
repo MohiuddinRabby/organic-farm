@@ -4,6 +4,7 @@ import { Button, Card } from "react-bootstrap";
 
 const Products = (props) => {
   const { name, img, price } = props.product;
+
   return (
     <div className="product-card">
       <Card className="text-center">
@@ -12,7 +13,10 @@ const Products = (props) => {
           <Card.Title id="pd-name">{name}</Card.Title>
           <Card.Title id="price">${price}</Card.Title>
           <br />
-          <Button variant="outline-success">
+          <Button
+            variant="outline-success"
+            onClick={() => props.handleCart(props.product)}
+          >
             <i className="fab fa-opencart fa-2x"></i>
           </Button>
         </Card.Body>

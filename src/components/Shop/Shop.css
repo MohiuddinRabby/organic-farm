@@ -11,10 +11,10 @@
   letter-spacing: 4px;
 }
 .cat-nav .nav-item {
-  cursor: pointer;
   margin: 18px;
 }
 .cat-nav .nav-item span {
+  cursor: pointer;
   font-size: 20px;
   letter-spacing: 2px;
 }
