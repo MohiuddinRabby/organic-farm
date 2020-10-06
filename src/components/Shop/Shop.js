@@ -4,6 +4,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import demoData from "../../demoData";
 import Products from "../Products/Products";
 import { CartContext } from "../../global/CartContext";
+import { addToDatabaseCart, getDatabaseCart } from "../../localStorage";
+import { useEffect } from "react";
 const Shop = () => {
   const [products, setProducts] = useState(demoData);
   const [category, setCategory] = useState("vegetable");
@@ -12,23 +14,11 @@ const Shop = () => {
   //context
   const [cart, setCart] = useContext(CartContext);
   const handleCart = (item) => {
-    //keep same product as 1 in cart but change the quantity
-    const clickSameProduct = item.id;
-    // console.log(clickSameProduct);
-    const sameProduct = cart.find((pd) => pd.id === clickSameProduct);
-    let count = 1;
-    let newCart;
-    if (sameProduct) {
-      count = sameProduct.quantity + 1;
-      sameProduct.quantity = count;
-      const others = cart.filter((pd) => pd.id !== clickSameProduct);
-      newCart = [...others, sameProduct];
-      // console.log(sameProduct, "if");
-    } else {
-      item.quantity = 1;
-      newCart = [...cart, item];
-    }
+    const newCart = [...cart, item];
     setCart(newCart);
+    const sameProduct = newCart.filter((pd) => pd.id === item.id);
+    const count = sameProduct.length;
+    addToDatabaseCart(item.id, count);
   };
   return (
     <Container fluid="md" className="shop-section py-5" id="shop">
